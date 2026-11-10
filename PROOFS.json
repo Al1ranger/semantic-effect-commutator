@@ -1,0 +1,387 @@
+{
+  "network": "StudioNet",
+  "source_commit": "a44a5a5eebfed29d017cdf98fbcf325f49c9a18d",
+  "transactions": [
+    {
+      "step": "deploy",
+      "args": [
+        "deploy",
+        "--contract",
+        "contracts/SemanticEffectCommutator.py"
+      ],
+      "nonce": "0x1cb",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "expected": "SUCCESS",
+      "hash": "0xed62a03d92cb08d78164dd514a26a7c09bd9dfa6f9373ce1fa877a83e40334f4",
+      "receipt": {
+        "hash": "0xed62a03d92cb08d78164dd514a26a7c09bd9dfa6f9373ce1fa877a83e40334f4",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "register-order-sensitive",
+      "args": [
+        "write",
+        "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "register",
+        "--args",
+        "order-sensitive",
+        "The token is red.",
+        "The token is blue.",
+        "The token is green.",
+        "Change red to blue, blue to green, and green to red.",
+        "Set the token to red regardless of its current color."
+      ],
+      "nonce": "0x1cc",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "expected": "SUCCESS",
+      "hash": "0x359ea2355e2a0eaa7d2412db2351fccbdb6d328e2e3cdb25d8527d739ae227d4",
+      "receipt": {
+        "hash": "0x359ea2355e2a0eaa7d2412db2351fccbdb6d328e2e3cdb25d8527d739ae227d4",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "analyze-order-sensitive",
+      "args": [
+        "write",
+        "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "analyze",
+        "--args",
+        "21305acda8ab38590734807a3d136d643ea53665e4ae2e6b1c2beceaa05f8935",
+        "774b229be44dc6270ea4aef1de8e163b8c8849b9c9e9ec234d71aadd20e1eb55"
+      ],
+      "nonce": "0x33",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "expected": "SUCCESS",
+      "hash": "0x0873d06f704566efac59d2a33ef955abe2e3ad259d48660230e4abb8bb487c02",
+      "receipt": {
+        "hash": "0x0873d06f704566efac59d2a33ef955abe2e3ad259d48660230e4abb8bb487c02",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "register-commuting",
+      "args": [
+        "write",
+        "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "register",
+        "--args",
+        "commuting",
+        "The token is red.",
+        "The token is blue.",
+        "The token is green.",
+        "Change red to blue, blue to green, and green to red.",
+        "Change red to green, blue to red, and green to blue."
+      ],
+      "nonce": "0x1cd",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "expected": "SUCCESS",
+      "hash": "0x62e646f2389fbd3eba01877ce189d7c7d675e75d60c93d28755542ece9b29382",
+      "receipt": {
+        "hash": "0x62e646f2389fbd3eba01877ce189d7c7d675e75d60c93d28755542ece9b29382",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "analyze-commuting",
+      "args": [
+        "write",
+        "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "analyze",
+        "--args",
+        "500e6b97db530831d5e340d3e0a39daef0676544dcd7df7e91a5d2a628bb2b14",
+        "a90de1d1f36d7764b59043a8b4e31771095752fb6072e2aba09f45c7bfcf1561"
+      ],
+      "nonce": "0x34",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "expected": "SUCCESS",
+      "hash": "0xa293a166e892863e3cf01b91fe1231e378adae35a3fe780274703dfa59858ba6",
+      "receipt": {
+        "hash": "0xa293a166e892863e3cf01b91fe1231e378adae35a3fe780274703dfa59858ba6",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "foreign-input",
+      "args": [
+        "write",
+        "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "analyze",
+        "--args",
+        "21305acda8ab38590734807a3d136d643ea53665e4ae2e6b1c2beceaa05f8935",
+        "a90de1d1f36d7764b59043a8b4e31771095752fb6072e2aba09f45c7bfcf1561"
+      ],
+      "nonce": "0x35",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "expected": "ERROR",
+      "message": "Input root mismatch",
+      "hash": "0x645d1a5290642d477cdc04dfd85e90bed20aa758f5dfea0e7e3cb4334ea5040a",
+      "receipt": {
+        "hash": "0x645d1a5290642d477cdc04dfd85e90bed20aa758f5dfea0e7e3cb4334ea5040a",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "consensus": "MAJORITY_AGREE",
+        "expected_error_matched": true,
+        "committed": false,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 5,
+        "idle_votes": 0,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "immutable-report",
+      "args": [
+        "write",
+        "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "analyze",
+        "--args",
+        "21305acda8ab38590734807a3d136d643ea53665e4ae2e6b1c2beceaa05f8935",
+        "774b229be44dc6270ea4aef1de8e163b8c8849b9c9e9ec234d71aadd20e1eb55"
+      ],
+      "nonce": "0x1ce",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "expected": "ERROR",
+      "message": "Report already published",
+      "hash": "0xf976f085b73c9fc291179ce2f67f2886505a2cbc6148687b8514fe406419677d",
+      "receipt": {
+        "hash": "0xf976f085b73c9fc291179ce2f67f2886505a2cbc6148687b8514fe406419677d",
+        "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "consensus": "MAJORITY_AGREE",
+        "expected_error_matched": true,
+        "committed": false,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 4,
+        "idle_votes": 1,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    }
+  ],
+  "studies": {
+    "order-sensitive": {
+      "spec": {
+        "id": "21305acda8ab38590734807a3d136d643ea53665e4ae2e6b1c2beceaa05f8935",
+        "policy": "semantic-effect-commutator-v1",
+        "contract": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "author": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+        "nonce": "order-sensitive",
+        "states": [
+          "The token is red.",
+          "The token is blue.",
+          "The token is green."
+        ],
+        "operations": [
+          "Change red to blue, blue to green, and green to red.",
+          "Set the token to red regardless of its current color."
+        ],
+        "root": "774b229be44dc6270ea4aef1de8e163b8c8849b9c9e9ec234d71aadd20e1eb55"
+      },
+      "report": {
+        "effects": {
+          "a": [
+            "S1",
+            "S2",
+            "S0"
+          ],
+          "b": [
+            "S0",
+            "S0",
+            "S0"
+          ]
+        },
+        "input_root": "774b229be44dc6270ea4aef1de8e163b8c8849b9c9e9ec234d71aadd20e1eb55",
+        "policy": "semantic-effect-commutator-v1",
+        "root": "3af019f2588779e9b0052f09515bf136901da09ff43364ca61c5989a48e7187e",
+        "rows": [
+          {
+            "a_then_b": {
+              "after_first": "S1",
+              "atomic_outcome": "S0"
+            },
+            "b_then_a": {
+              "after_first": "S0",
+              "atomic_outcome": "S1"
+            },
+            "relation": "DIFFERENT",
+            "state": 0
+          },
+          {
+            "a_then_b": {
+              "after_first": "S2",
+              "atomic_outcome": "S0"
+            },
+            "b_then_a": {
+              "after_first": "S0",
+              "atomic_outcome": "S1"
+            },
+            "relation": "DIFFERENT",
+            "state": 1
+          },
+          {
+            "a_then_b": {
+              "after_first": "S0",
+              "atomic_outcome": "S0"
+            },
+            "b_then_a": {
+              "after_first": "S0",
+              "atomic_outcome": "S1"
+            },
+            "relation": "DIFFERENT",
+            "state": 2
+          }
+        ],
+        "status": "ORDER_SENSITIVE",
+        "study_id": "21305acda8ab38590734807a3d136d643ea53665e4ae2e6b1c2beceaa05f8935",
+        "unresolved": [],
+        "witnesses": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "commuting": {
+      "spec": {
+        "id": "500e6b97db530831d5e340d3e0a39daef0676544dcd7df7e91a5d2a628bb2b14",
+        "policy": "semantic-effect-commutator-v1",
+        "contract": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+        "author": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+        "nonce": "commuting",
+        "states": [
+          "The token is red.",
+          "The token is blue.",
+          "The token is green."
+        ],
+        "operations": [
+          "Change red to blue, blue to green, and green to red.",
+          "Change red to green, blue to red, and green to blue."
+        ],
+        "root": "a90de1d1f36d7764b59043a8b4e31771095752fb6072e2aba09f45c7bfcf1561"
+      },
+      "report": {
+        "effects": {
+          "a": [
+            "S1",
+            "S2",
+            "S0"
+          ],
+          "b": [
+            "S2",
+            "S0",
+            "S1"
+          ]
+        },
+        "input_root": "a90de1d1f36d7764b59043a8b4e31771095752fb6072e2aba09f45c7bfcf1561",
+        "policy": "semantic-effect-commutator-v1",
+        "root": "aae437e98a33009459f888da5393335f56e0327d911372032de9d1648a769331",
+        "rows": [
+          {
+            "a_then_b": {
+              "after_first": "S1",
+              "atomic_outcome": "S0"
+            },
+            "b_then_a": {
+              "after_first": "S2",
+              "atomic_outcome": "S0"
+            },
+            "relation": "SAME",
+            "state": 0
+          },
+          {
+            "a_then_b": {
+              "after_first": "S2",
+              "atomic_outcome": "S1"
+            },
+            "b_then_a": {
+              "after_first": "S0",
+              "atomic_outcome": "S1"
+            },
+            "relation": "SAME",
+            "state": 1
+          },
+          {
+            "a_then_b": {
+              "after_first": "S0",
+              "atomic_outcome": "S2"
+            },
+            "b_then_a": {
+              "after_first": "S1",
+              "atomic_outcome": "S2"
+            },
+            "relation": "SAME",
+            "state": 2
+          }
+        ],
+        "status": "COMMUTES_ON_FRAME",
+        "study_id": "500e6b97db530831d5e340d3e0a39daef0676544dcd7df7e91a5d2a628bb2b14",
+        "unresolved": [],
+        "witnesses": []
+      }
+    }
+  },
+  "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+  "source": {
+    "address": "0x971320B04c43Ddb2b7AFc635e5D976e461569F71",
+    "source_match": true,
+    "sha256": "adfa7b881bcb0c5ffa6a56f215df67f86ca57c0820103eabf3e4303f201dd93d"
+  },
+  "verified": true
+}

@@ -24,4 +24,6 @@ The exhaustive helper test checks all 15,625 pairs of effect tables and all thre
 
 The contract and analysis are new to this repository. The native CLI transport, receipt helpers and Windows test cleanup are adapted from [ParaphraseDistanceCodec](https://github.com/mahdiaqal/paraphrase-distance-codec) under the included MIT notices. The proof script journals each native test-wallet send before broadcasting and checks the original hash on resume. An unknown broadcast outcome requires manual receipt/history inspection. Only use the scripts with a dedicated StudioNet test account and zero value.
 
-Deployment and receipt evidence: pending.
+StudioNet contract: [0x971320B04c43Ddb2b7AFc635e5D976e461569F71](https://explorer-studio.genlayer.com/address/0x971320B04c43Ddb2b7AFc635e5D976e461569F71). Deployed source SHA-256 after line-ending normalization: `adfa7b881bcb0c5ffa6a56f215df67f86ca57c0820103eabf3e4303f201dd93d`.
+
+The live rotation/reset study reports `ORDER_SENSITIVE` from all three start states; the inverse rotations report `COMMUTES_ON_FRAME`. See [verified receipts and result tables](LIVE_PROOFS.md), [machine-readable readbacks](PROOFS.json), and [submission text](SUBMISSION.md).
